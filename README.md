@@ -22,3 +22,5 @@ The configs are currently set to plot training and validation graphs and data. I
 If desired, checkpoints are available to load the models. CryoDRGN VAE has checkpoints `ckpts_000` and `ckpts_001`, corresponding to training on protein 000 and protein 001. 
 
 Spatial VAE has checkpoints `ckpts_spatial` and `ckpts_spatial_mlp`.
+
+Note: Remember to change directory paths in config file to your local directory.
