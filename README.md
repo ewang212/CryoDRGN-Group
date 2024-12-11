@@ -23,4 +23,6 @@ If desired, checkpoints are available to load the models. CryoDRGN VAE has check
 
 Spatial VAE has checkpoints `ckpts_spatial` and `ckpts_spatial_mlp`.
 
+Unfortunately, the checkpoints are too large to upload to github, so here is a link: https://drive.google.com/file/d/1tEpwDLfhBfca_NO3XNF_ct85OYEZLXjx/view?usp=sharing
+
 Note: Remember to change directory paths in config file to your local directory.
