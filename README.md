@@ -7,7 +7,7 @@ This github Repo consists of two models: CryoDRGN VAE (encoder decoder structure
 Each model has a separate config file. 
 To train, run:
 ```
-train_model.py --config_file <file_name>.
+train_model.py --config_file <file_name>
 ```
 
 To perform validation, run:
