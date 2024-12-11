@@ -1,0 +1,48 @@
+default: &DEFAULT
+
+  data:
+    num_images: 100 
+    D: 50 
+    inter_linear: False
+    mrc_file_path: "/home/ubuntu/verb-workspace/scale_imgs_up/data/vols/000.mrc"
+    dataset_type: "Anna's Projections of 1 volume with fixed skip rotations"
+    train_pctg: 0.8
+    shuffle: False
+    batch_size: 10
+    projections_file_path: "data/slices_000.pkl"
+    rotations_file_path: "data/rotations_000.pkl"
+    poses_file_path: None 
+
+  evaluate:
+    visualize_test: True
+    
+  model:
+    spatial: True
+    pose_mlp : True
+    model_type: "Spatial VAE"
+    positional_encoding: False 
+    reg_grid_no_cheating: True
+    validation: True 
+    hidden_dim: 256
+    z_dim: 256 
+    n_encoder_layers: 10
+    n_decoder_layers: 10
+    lr: 1e-4
+    epochs: 1000
+    alpha_recon: 1
+    beta_kl: 0.1
+    d_model: 5
+  
+  plotting: 
+    plot_training: True
+    plot_validation: False
+    num_slices_to_3d: 10
+    view_angle: 30
+    thresh: 0.35
+  
+  saving:
+    save_checkpoints: False
+    save_file_dir: "figs"
+    load_checkpoint_path: "spatial_mlp_1280.pth"
+    checkpoints_dir: "/home/ubuntu/verb-workspace/scale_imgs_up/ckpts/ckpts_spatial_mlp"
+    filename: "img"

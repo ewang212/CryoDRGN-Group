@@ -1,0 +1,40 @@
+default: &DEFAULT
+
+  data:
+    num_images: 100
+    D: 50 
+    inter_linear: False
+    mrc_file_path: "/home/ubuntu/verb-workspace/scale_imgs_up/data/vols/000.mrc"
+    dataset_type: "Anna's Projections of 1 volume with fixed skip rotations"
+    train_pctg: 0.90
+    batch_size: 5
+    projections_file_path: "data/slices_000.pkl"
+    rotations_file_path: "data/rotations_000.pkl"
+    
+  model:
+    validation: True
+    model_type: "CryoDRGN VAE"
+    hidden_dim: 800
+    z_dim: 500
+    n_encoder_layers: 10
+    n_decoder_layers: 10
+    lr: 1e-4
+    epochs: 150
+    alpha_recon: 1
+    beta_kl: 0.1
+    d_model: 5
+    positional_encoding: True
+  
+  plotting: 
+    plot_validation: True
+    num_slices_to_3d: 100
+    view_angle: 130
+    thresh: 0.1
+  
+  saving:
+    save_checkpoints: False
+    save_file_dir: ""
+    checkpoint_filename: "vae_90.pth"
+    checkpoints_dir: "/home/ubuntu/verb-workspace/scale_imgs_up/ckpts/ckpts_000"
+    filename: "img"
+
