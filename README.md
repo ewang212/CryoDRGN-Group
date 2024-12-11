@@ -25,4 +25,6 @@ Spatial VAE has checkpoints `ckpts_spatial` and `ckpts_spatial_mlp`.
 
 Unfortunately, the checkpoints are too large to upload to github, so here is a link: https://drive.google.com/file/d/1tEpwDLfhBfca_NO3XNF_ct85OYEZLXjx/view?usp=sharing
 
+Running train_model.py will plot training losses for both CryoDRGN VAE and Spatial VAE. However, as mentioned in the paper, since our attempt at Spatial VAE lead to a dead end with poor results, validation is only performed CryoDRGN VAE by running validation.py. The primary method of validation visualization (other than the loss) in CryoDRGN VAE is by comparing the output slices (in real and Fourier space) of the model ran on correct rotations versus ran on random rotations. The 3D reconstruction from both are plotted and can be compared. Fourier Shell Correlation is used as a metric to compare the ground truth to the output with correct rotations. 
+
 Note: Remember to change directory paths in config file to your local directory.
