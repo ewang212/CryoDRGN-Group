@@ -4,7 +4,7 @@ default: &DEFAULT
     num_images: 100 
     D: 50 
     inter_linear: False
-    mrc_file_path: "/home/ubuntu/verb-workspace/scale_imgs_up/data/vols/000.mrc"
+    mrc_file_path: "/path/to/your/directory/CryoDRGN-Group/data/vols/000.mrc"
     dataset_type: "Anna's Projections of 1 volume with fixed skip rotations"
     train_pctg: 0.8
     shuffle: False
@@ -44,5 +44,5 @@ default: &DEFAULT
     save_checkpoints: False
     save_file_dir: "figs"
     load_checkpoint_path: "spatial_mlp_1280.pth"
-    checkpoints_dir: "/home/ubuntu/verb-workspace/scale_imgs_up/ckpts/ckpts_spatial_mlp"
+    checkpoints_dir: "/path/to/your/directory/CryoDRGN-Group/ckpts/ckpts_spatial_mlp"
     filename: "img"
