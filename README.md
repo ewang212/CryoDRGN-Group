@@ -14,12 +14,12 @@ pip install numpy==1.26.4
 Each model has a separate config file. 
 To train, run:
 ```
-train_model.py --config_file <file_name>
+python train_model.py --config_file <file_name>
 ```
 
 To perform validation, run:
 ```
-validation.py --config_file <file_name>
+python validation.py --config_file <file_name>
 ```
 
 CryoDRGN is the default, and its config file is `config.yaml`, while our two variations of Spatial VAE are `config_spatial_mlp.yaml` and `config_spatial.yaml`. 
