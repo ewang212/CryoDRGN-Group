@@ -116,6 +116,6 @@ np.save("volume_random.npy", vol_r)
 mrc_file_path = config.data.mrc_file_path
 evaluate_fsc(vol_f, mrc_file_path, grid_size)
 
-if config.model.model_type == "new VAE":
+if config.model.model_type == "CryoDRGN VAE":
     print("Images and Data Generated. Please check for Validation")
 
