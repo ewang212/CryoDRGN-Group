@@ -123,7 +123,7 @@ for epoch in range(num_epochs):
                 validation_loss += val_loss.item()
         
         avg_val_loss = validation_loss / len(test_data_loader)
-        if config.model.model_type == "new VAE":
+        if config.model.model_type == "CryoDRGN Vae":
             avg_val_loss_r = validation_loss_r / len(test_data_loader)
             print(f"Val loss: {avg_val_loss}, Val loss random rotation: {avg_val_loss_r}")
         else:
