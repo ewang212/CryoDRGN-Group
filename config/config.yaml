@@ -4,7 +4,7 @@ default: &DEFAULT
     num_images: 100
     D: 50 
     inter_linear: False
-    mrc_file_path: "/home/ubuntu/verb-workspace/scale_imgs_up/data/vols/000.mrc"
+    mrc_file_path: "/path/to/your/directory/CryoDRGN-Group/data/vols/000.mrc"
     dataset_type: "Anna's Projections of 1 volume with fixed skip rotations"
     train_pctg: 0.90
     batch_size: 5
@@ -35,6 +35,6 @@ default: &DEFAULT
     save_checkpoints: False
     save_file_dir: ""
     checkpoint_filename: "vae_90.pth"
-    checkpoints_dir: "/home/ubuntu/verb-workspace/scale_imgs_up/ckpts/ckpts_000"
+    checkpoints_dir: "/path/to/your/directory/CryoDRGN-Group/ckpts/ckpts_000"
     filename: "img"
 
