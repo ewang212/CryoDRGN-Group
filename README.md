@@ -4,6 +4,13 @@ Implementation of CryoDRGN by students at Caltech.
 
 This github Repo consists of two models: CryoDRGN VAE (encoder decoder structure cited in our final report) as well as Spatial VAE (our unique rendition of estimating rotation built on top of CryoDRGN's architecture)
 
+To setup, please run:
+```
+pip install -r requirements.txt
+sudo apt install libgl1-mesa-glx
+pip install numpy==1.26.4
+```
+
 Each model has a separate config file. 
 To train, run:
 ```
